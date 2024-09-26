@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
+import './SearchByName.css';
 
 const SearchByName = ({ onSearch }) => {
     const [inputText, setInputText] = useState("");
@@ -21,7 +22,7 @@ const SearchByName = ({ onSearch }) => {
                 id="search-mentor-by-name"
                 onChange={inputHandler}
                 fullWidth
-                label="Search by Mentor Name"
+                label="Search by mentor name"
             />
 
             {/* search button with magnifying glass icon */}

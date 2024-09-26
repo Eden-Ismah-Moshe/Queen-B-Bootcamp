@@ -1,23 +1,9 @@
 @import "../../styles/variables.css";
-.main {
+
+.search-mentor-by-name {
     display: flex;
-    height: 100vh;
-    width: 100%;
     align-items: center;
-    flex-direction: column;
-    row-gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    width: 50%;
 }
-
-h1 {
-    margin: 10px;
-    font-size: 40px;
-    color: rgb(1, 1, 59);
-}
-
-.search {
-    width: 30%;
-}
-
-ul li {
-    font-size: 20px;
-} 
