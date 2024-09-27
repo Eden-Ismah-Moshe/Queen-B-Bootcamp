@@ -56,44 +56,46 @@ const Login = () => {
   return (
     <div>
       <div className="login-wrapper">
-        <div className="form-wrapper">
-          <label>
-            <div className="label-name-continer">
-              Email <CgAsterisk color="red" className="asterisk" />
-            </div>
-            <input
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </label>
-          <label>
-            <div className="label-name-continer">
-              Password <CgAsterisk color="red" className="asterisk" />
-            </div>
-            <div className="input-icon-wrapper">
+        <div className="login-form-wrapper">
+          <div className="login-form">
+            <label className="login-label-form">
+              <div className="label-name-continer">
+                Email <CgAsterisk color="red" className="asterisk" />
+              </div>
               <input
-                type={passwordType}
-                name="password"
-                value={password}
-                required
-                onChange={(e) => setPassword(e.target.value)}
-                style={{ width: "100%" }}
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
-              <span className="eye-icon" onClick={handleToggle}>
-                {isShowPassword ? (
-                  <FaEye size={25} />
-                ) : (
-                  <FaEyeSlash size={25} />
-                )}
-              </span>
-            </div>
-          </label>
-          {error && <p className="error-message">{error}</p>}
+            </label>
+            <label className="login-label-form">
+              <div className="label-name-continer">
+                Password <CgAsterisk color="red" className="asterisk" />
+              </div>
+              <div className="input-icon-wrapper">
+                <input
+                  type={passwordType}
+                  name="password"
+                  value={password}
+                  required
+                  onChange={(e) => setPassword(e.target.value)}
+                  style={{ width: "100%" }}
+                />
+                <span className="eye-icon" onClick={handleToggle}>
+                  {isShowPassword ? (
+                    <FaEye size={25} />
+                  ) : (
+                    <FaEyeSlash size={25} />
+                  )}
+                </span>
+              </div>
+            </label>
+            {error && <p className="error-message">{error}</p>}
 
-          <button className="login-btn" onClick={handleClickOnLoginButton}>
-            Login
-          </button>
+            <button className="login-btn" onClick={handleClickOnLoginButton}>
+              Login
+            </button>
+          </div>{" "}
         </div>
 
         <div className="login-image-wrapper">

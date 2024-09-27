@@ -74,7 +74,7 @@ const Home = () => {
             className="button-74"
             onClick={() => navigate("/ViewAllMentors")}
           >
-            View All Mentors
+            View All Mentors As A Guest
           </button>
         </div>
       </div>

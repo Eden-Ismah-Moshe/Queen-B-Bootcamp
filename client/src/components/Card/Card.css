@@ -23,7 +23,7 @@
   justify-content: space-evenly;
   /* border-radius: 2em;
     border: groove 0.3em hotpink; */
-  background-color: var(--myPurple);
+  background-color: var(--myWhite);
   border-radius: 10px;
   /*box-shadow: 0px 0px 9px 6px var(--myPurple);*/
 }
