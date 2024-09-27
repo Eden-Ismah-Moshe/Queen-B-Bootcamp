@@ -1,6 +1,7 @@
 @import "../../styles/variables.css";
 
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +10,6 @@ header {
   font-size: 1.5rem;
   /* padding: 1rem; */
   background-color: var(--headerColor);
-  width: 100%;
 }
 
 header img {

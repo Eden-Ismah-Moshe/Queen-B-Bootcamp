@@ -66,64 +66,66 @@ const Signup = () => {
   return (
     <div>
       <div className="signup-wrapper">
-        <div className="form-wrapper">
-          <label>
-            <div className="label-container">
-              Email <CgAsterisk color="red" className="asterisk-icon" />
-            </div>
-            <input
-              type="email"
-              name="email"
-              value={email}
-              required
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </label>
-          <label>
-            <div className="label-container">
-              Password <CgAsterisk color="red" className="asterisk-icon" />
-            </div>
-            <div className="input-icon-wrapper">
+        <div className="signup-form-wrapper">
+          <div className="signup-form">
+            <label>
+              <div className="label-container">
+                Email <CgAsterisk color="red" className="asterisk-icon" />
+              </div>
               <input
-                type={passwordType}
-                name="password"
-                value={password}
+                type="email"
+                name="email"
+                value={email}
                 required
-                onChange={(e) => setPassword(e.target.value)}
-                style={{ width: "100%" }}
+                onChange={(e) => setEmail(e.target.value)}
               />
-              <span className="eye-icon" onClick={handleToggle}>
-                {isShowPassword ? (
-                  <FaEye size={25} />
-                ) : (
-                  <FaEyeSlash size={25} />
-                )}
-              </span>
-            </div>
-          </label>
-          <label>
-            <div className="label-container">
-              Type <CgAsterisk color="red" className="asterisk-icon" />
-            </div>
-            <select
-              value={userType}
-              onChange={(e) => setUserType(e.target.value)}
-            >
-              <option value="" disabled>
-                Select type
-              </option>{" "}
-              {options.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-          </label>
+            </label>
+            <label>
+              <div className="label-container">
+                Password <CgAsterisk color="red" className="asterisk-icon" />
+              </div>
+              <div className="input-icon-wrapper">
+                <input
+                  type={passwordType}
+                  name="password"
+                  value={password}
+                  required
+                  onChange={(e) => setPassword(e.target.value)}
+                  style={{ width: "100%" }}
+                />
+                <span className="eye-icon" onClick={handleToggle}>
+                  {isShowPassword ? (
+                    <FaEye size={25} />
+                  ) : (
+                    <FaEyeSlash size={25} />
+                  )}
+                </span>
+              </div>
+            </label>
+            <label>
+              <div className="label-container">
+                Type <CgAsterisk color="red" className="asterisk-icon" />
+              </div>
+              <select
+                value={userType}
+                onChange={(e) => setUserType(e.target.value)}
+              >
+                <option value="" disabled>
+                  Select type
+                </option>{" "}
+                {options.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </label>
 
-          {error && <p className="error-message">{error}</p>}
-          <button className="signup-btn" onClick={handleClickOnSignupButton}>
-            SignUp
-          </button>
+            {error && <p className="error-message">{error}</p>}
+            <button className="signup-btn" onClick={handleClickOnSignupButton}>
+              SignUp
+            </button>
+          </div>
         </div>
 
         <div className="signup-image-wrapper">

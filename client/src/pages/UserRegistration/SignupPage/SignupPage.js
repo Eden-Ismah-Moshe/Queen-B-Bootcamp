@@ -7,7 +7,7 @@ const SignupPage = () => {
   return (
     <div>
       <div className="registration-title-wrapper">
-        <h3 className="registration-title">SignIn to Queen Match</h3>{" "}
+        <h3 className="registration-title">SignUp to Queens Match</h3>{" "}
       </div>
       <div className="registration-component-wrapper">
         <Signup />
