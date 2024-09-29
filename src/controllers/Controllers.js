@@ -3,9 +3,7 @@ const bcrypt = require("bcryptjs");
 
 async function getAllMentors(req, res) {
   try {
-    console.log("Received request to get all mentors");
     const mentors = await postgres.getAllMentors();
-    console.log(mentors.data);
 
     // checking that the db is not empty and sending back the data
     if (mentors.data.length === 0) {

@@ -141,7 +141,6 @@ async function createUser(email, password, type) {
 
   const values = [email, password, type];
 
-  console.log("values: ", values);
   try {
     const result = await runSingleQuery(query, values);
 
