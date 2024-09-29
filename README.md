@@ -1,5 +1,53 @@
-# Queen-B-Bootcamp-Example
-An example app for the queenB Initiative - Boilerplate
+# Queens Match - Mentor & Mentee Platform
+
+**Queens Match** is a mentorship platform developed during the QueenB and AppsFlyer Bootcamp. It aims to connect mentors and mentees within the QueenB community, fostering relationships that encourage women in tech.
+
+This project was built by a team of three members as part of the QueenB Initiative. We used modern technologies to create a seamless experience for users, allowing them to find, register, and connect with mentors.
+
+## Project Overview
+
+**Features:**
+- **Mentorship Matching:** Easily browse and search for mentors by technology, location, and more.
+- **Mentor Registration:** Mentors can easily sign up, providing key details like skills, experience, and location.
+- **Responsive Design:** Accessible on all devices to ensure usability for everyone.
+- **Real-time Updates:** Leveraging the power of PostgreSQL and Docker for a smooth database experience.
+  
+## Technologies Used
+
+![Technologies](path_to_technologies_icons)  
+- **React.js:** Frontend library for building the user interface.
+- **Node.js & Express:** Backend server to handle requests and API management.
+- **PostgreSQL:** Database management for storing mentorship data.
+- **Docker:** For running a local PostgreSQL instance.
+- **pgAdmin:** To manage the PostgreSQL database.
+  
+## Screenshots
+
+### 1. Home Screen
+*The homepage features a simple layout with options to register as a mentor or view all available mentors.*
+![Home](./client/src/assets/screenshots/homescreen.jpg)  
+
+### 2. View All Mentors
+*Browse through all mentors with the ability to filter based on technology, experience, and location.*
+![All Mentors](./client/src/assets/screenshots/ViewAllMentors.jpg)  
+
+### 3. Mentor Popup
+*Clicking on Show Details button on the mentor’s card reveals a detailed popup with their full profile, including skills, location, and experience.*
+![Mentor Popup](./client/src/assets/screenshots/MentorPopup.jpg)  
+
+### 4. Mentor Registration Form
+*Step 1: Mentors can enter their personal details like name, location, and about.*
+![Mentor Registration - Step 1](./client/src/assets/screenshots/addMentor1.jpg)  
+
+*Step 2: Add professional information such as experience, technology stack, and LinkedIn profile.*
+![Mentor Registration - Step 2](./client/src/assets/screenshots/addMentor2.jpg)  
+
+### 5. Login & Signup
+*Login screen: Users can log into the platform with their existing credentials.*
+![Login](./client/src/assets/screenshots/login.jpg)  
+
+*Signup screen: New users can create an account by providing their basic information.*
+![Signup](./client/src/assets/screenshots/signup.jpg)  
 
 ### In order to create a project from this example, please follow the instructions below.
 
