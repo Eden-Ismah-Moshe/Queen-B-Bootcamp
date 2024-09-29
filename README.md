@@ -6,9 +6,10 @@ This project was built by a team of three members as part of the QueenB Initiati
 
 ## Project Overview
 
-**Features:**
+## Features:
 - **Mentorship Matching:** Easily browse and search for mentors by technology, location, and more.
 - **Mentor Registration:** Mentors can easily sign up, providing key details like skills, experience, and location.
+- **User Signup & Login:** Secure user authentication allowing mentees and mentors to create accounts, log in, and access personalized features.
 - **Responsive Design:** Accessible on all devices to ensure usability for everyone.
 - **Real-time Updates:** Leveraging the power of PostgreSQL and Docker for a smooth database experience.
   
