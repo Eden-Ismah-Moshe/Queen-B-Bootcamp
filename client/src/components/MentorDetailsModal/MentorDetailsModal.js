@@ -37,7 +37,7 @@ const MentorDetailsModal = ({ show, onClose, data }) => {
             <h3 className="about">{data.about}</h3>
             <div className="data-container">
               <p>{data.position}</p>
-              <p>{data.years_of_experience} Years Of Experience </p>
+              <p>{data.experience} Years Of Experience </p>
               <p>Work In {data.company}</p>
               <p>Live In {data.geographical_location}</p>
             </div>
