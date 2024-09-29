@@ -13,8 +13,6 @@ This project was built by a team of three members as part of the QueenB Initiati
 - **Real-time Updates:** Leveraging the power of PostgreSQL and Docker for a smooth database experience.
   
 ## Technologies Used
-
-![Technologies](path_to_technologies_icons)  
 - **React.js:** Frontend library for building the user interface.
 - **Node.js & Express:** Backend server to handle requests and API management.
 - **PostgreSQL:** Database management for storing mentorship data.
