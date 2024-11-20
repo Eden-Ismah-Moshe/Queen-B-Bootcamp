@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CgAsterisk } from "react-icons/cg";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
 import "./Login.css";
 
@@ -11,6 +12,8 @@ import queenbImage from "../../assets/QueenB.png";
 const API_BASE_URL = "http://localhost:5001";
 
 const Login = () => {
+  const { login } = useContext(AuthContext);
+
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,10 +45,12 @@ const Login = () => {
         setError("");
 
         if (response.data.data === "Mentee") {
-          navigate("/viewAllMentors");
+          login("Mentee");
         } else {
-          navigate("/MentorRegistration");
+          login("Mentor");
         }
+
+        navigate("/Dashboard");
       }
     } catch (error) {
       console.log(error);

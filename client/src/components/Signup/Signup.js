@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CgAsterisk } from "react-icons/cg";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import queenbImage from "../../assets/QueenB.png";
+import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
 import "./Signup.css";
-import queenbImage from "../../assets/QueenB.png";
 
 const API_BASE_URL = "http://localhost:5001";
 
@@ -15,6 +16,8 @@ const options = [
 ];
 
 const Signup = () => {
+  const { login } = useContext(AuthContext);
+
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -52,8 +55,10 @@ const Signup = () => {
       const response = await axios.put(`${API_BASE_URL}/api/users`, data);
       if (response.status === 201) {
         if (userType === "Mentee") {
-          navigate("/viewAllMentors");
+          login("Mentee");
+          navigate("/Dashboard");
         } else {
+          login("Mentor");
           navigate("/MentorRegistration");
         }
       }

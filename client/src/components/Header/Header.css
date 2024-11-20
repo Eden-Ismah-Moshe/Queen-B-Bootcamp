@@ -16,7 +16,18 @@ header img {
   height: 70px;
 }
 
-.home-ul {
-  display: flex;
-  margin-left: auto;
+.home-ul a {
+  font-size: 0.9rem; /* Smaller font size */
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.home-ul a:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.home-ul a:active {
+  transform: scale(1); /* Reset zoom on click */
 }

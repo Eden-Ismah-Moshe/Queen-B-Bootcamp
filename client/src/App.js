@@ -33,12 +33,12 @@ import ViewAllMentors from "./pages/DisplayMentors/ViewAllMentors";
 import About from "./pages/About/About";
 import LoginPage from "./pages/UserRegistration/LoginPage/LoginPage";
 import SignupPage from "./pages/UserRegistration/SignupPage/SignupPage";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* maybe add here another div with className="pages" */}
         <Routes>
           <Route exact path="/" Component={Home} />
           <Route exact path="/login" Component={LoginPage} />
@@ -46,6 +46,7 @@ function App() {
           <Route path="/MentorRegistration" Component={MentorRegistration} />
           <Route path="/viewAllMentors" Component={ViewAllMentors} />
           <Route path="/about" Component={About} />
+          <Route path="/Dashboard" Component={Dashboard} />
         </Routes>
       </Router>
     </div>
