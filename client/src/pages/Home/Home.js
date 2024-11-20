@@ -10,9 +10,9 @@ const Home = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <div class="content-wrapper">
+      <div className="content-wrapper">
         <Header />
-        <div class="content">
+        <div className="content">
           <main>
             <section>
               <div className="leftSide-container">
@@ -50,7 +50,7 @@ const Home = () => {
         </div>
 
         {/*added the svg wave*/}
-        <div class="wave-container">
+        <div className="wave-container">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"
@@ -64,18 +64,6 @@ const Home = () => {
               d="M0,128L30,128C60,128,120,128,180,144C240,160,300,192,360,181.3C420,171,480,117,540,101.3C600,85,660,107,720,144C780,181,840,235,900,234.7C960,235,1020,181,1080,176C1140,171,1200,213,1260,218.7C1320,224,1380,192,1410,176L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
             ></path>
           </svg>
-        </div>
-      </div>
-
-      <div class="after-wave-section">
-        <div class="new-content">
-          {/* Add your new content here */}
-          <button
-            className="button-74"
-            onClick={() => navigate("/ViewAllMentors")}
-          >
-            View All Mentors As A Guest
-          </button>
         </div>
       </div>
       <Footer />

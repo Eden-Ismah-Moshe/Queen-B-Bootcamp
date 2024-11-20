@@ -68,15 +68,16 @@ const MentorFrom = () => {
           <div className="modal">
             <div className="text-continer">
               <p>
-                Thank you for signing up as a mentor and welcome to the QueenB
-                team {""}
+                Your details have been saved.{""}
                 <LiaCrownSolid size={20} />
                 {""}
                 <CgBee size={20} />
               </p>
             </div>
             <div className="button-continer">
-              <button onClick={() => navigate("/")}>Back To Home Page</button>
+              <button onClick={() => navigate("/Dashboard")}>
+                Continue to the website
+              </button>
             </div>
           </div>
         </div>

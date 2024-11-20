@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import CardsGrid from "../../components/CardsGrid/CardsGrid";
 import Header from "../../components/Header/Header";
 import SearchByName from "../../components/SearchByName/SearchByName";
+import { AuthContext } from "../../context/AuthContext";
 
 const port = process.env.PORT || 5001;
 
 const ViewAllMentors = () => {
+  const { user } = useContext(AuthContext);
+
   const [mentors, setMentors] = useState([]); // holds all mentors
   const [filteredMentors, setFilteredMentors] = useState([]); // holds filtered mentors
-  
+
   useEffect(() => {
     const fetchMentors = async () => {
       try {
@@ -22,12 +25,12 @@ const ViewAllMentors = () => {
           console.error("Failed to fetch mentors:", response.statusText);
         }
       } catch (error) {
-        console.error("Error fetching mentors:", error);  
+        console.error("Error fetching mentors:", error);
       }
     };
 
     fetchMentors();
-  }, []); 
+  }, []);
 
   // search function to filter mentors based on name
   const handleSearch = (inputText) => {
